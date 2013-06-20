@@ -29,6 +29,8 @@
         <Variable name="VALGRIND2" value="/usr/local/bin/valgrind --tool=memcheck" />
       </EnvironmentVariables>
     </EnvironmentVariables>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>ARMv7</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -80,10 +82,6 @@
     <ProjectReference Include="NUnitLite\MonoTouch.NUnitLite.csproj">
       <Project>{9A9B24AF-1103-43D4-8EC0-9EC0155322FC}</Project>
       <Name>MonoTouch.NUnitLite</Name>
-    </ProjectReference>
-    <ProjectReference Include="monotouch.tests\monotouch.tests.csproj">
-      <Project>{20E71273-1306-477D-964D-A7FAFE20196D}</Project>
-      <Name>monotouch.tests</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
